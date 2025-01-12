@@ -9,13 +9,13 @@ import {
     yellowImg,
   } from "../utils";
   
-  export const navLists = ["Store", "Mac", "iPhone", "Support"];
+  export const navLists = ["About US", "Services", "Contact US"];
   
   export const hightlightsSlides = [
     {
       id: 1,
       textLists: [
-        "Enter A17 Pro.",
+        "Enter A17 FPro.",
         "Game‑changing chip.",
         "Groundbreaking performance.",
       ],
