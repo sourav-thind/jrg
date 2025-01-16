@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
 
 const Scene = () => {
-  const { scene } = useGLTF('/models/scene.glb'); // Path to your .glb model
+  const { scene } = useGLTF('/models/scene.glb'); 
   return <primitive object={scene} />;
 };
 
@@ -11,7 +11,6 @@ const MainSetup = () => {
   const cameraRef = useRef();
   const [index, setIndex] = useState(0);
 
-  // Define camera positions and rotations
   const cameraPositions = [
     { position: [0, 0, 3], rotation: [0, 0, 0] },
     { position: [5, 2, 0], rotation: [0, Math.PI / 2, 0] },
@@ -22,7 +21,6 @@ const MainSetup = () => {
     if (index < cameraPositions.length - 1) {
       setIndex((prev) => prev + 1);
     } else {
-      // Scroll to the next section when the last view is reached
       window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
     }
   };
