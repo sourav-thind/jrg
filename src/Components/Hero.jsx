@@ -15,6 +15,9 @@ const Hero = () => {
       <p className='hero-title'>   
         J R G Birmingham
       </p>
+      <p>
+        We Build your dream
+      </p>
     </div>
    </section>
   )
