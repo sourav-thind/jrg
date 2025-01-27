@@ -44,7 +44,6 @@ const MainSetup = () => {
         <OrbitControls enableZoom={false} />
       </Canvas>
 
-      {/* Buttons */}
       <div className="absolute bottom-10 w-full flex justify-center gap-4">
         <button
           onClick={handlePrev}

@@ -1,8 +1,6 @@
 import React from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import MainSetup from './MainSetup';
-
 
 const Hero = () => {
   useGSAP(()=>{
@@ -16,7 +14,7 @@ const Hero = () => {
         J R G Birmingham
       </p>
       <p>
-        We Build your dream
+        We Build your house, So you can make it a home.
       </p>
     </div>
    </section>
