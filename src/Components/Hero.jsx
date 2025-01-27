@@ -16,15 +16,15 @@ const Hero = () => {
     </div>
   
     <div className="h-screen hero-title w-full flex-center flex-col relative z-10 text-white text-center">
-      <div className='bg-black bg-opacity-70 w-[60%] p-16 rounded-md'>
+      <div className='bg-black bg-opacity-70 w-[80%] md:w-[60%] p-16 rounded-md'>
 
-      <h1 className=" text-5xl font-bold mb-4">
+      <h1 className=" text-3xl md:text-5xl font-bold mb-4">
         J R G Birmingham
       </h1>
-      <p className="text-lg mb-6">
+      <p className="text-sm md:text-lg mb-6">
         We Build your house, So you can make it a home.
       </p>
-      <button className="px-6 py-3 bg-blue-600 rounded-md hover:bg-blue-700">
+      <button className=" text-sm px-3 py-3 md:px-6 md:py-3 bg-blue rounded-md hover:bg-blue-700">
         Learn More
       </button>
       </div>
