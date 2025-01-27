@@ -9,14 +9,16 @@ const Hero = () => {
   },[])
   return (
     <section>
-<div className="absolute top-0 left-0 w-[100vw] h-[100vh] z-1 blur-60">
+<div className="absolute top-0 left-0 w-[100vw] h-[100vh] z-1 ">
       <video autoPlay loop muted className="w-full h-full object-cover">
         <source src={heroVideo} />
       </video>
     </div>
   
-    <div className="h-screen w-full flex-center flex-col relative z-10 text-white text-center">
-      <h1 className="hero-title text-5xl font-bold mb-4">
+    <div className="h-screen hero-title w-full flex-center flex-col relative z-10 text-white text-center">
+      <div className='bg-black bg-opacity-70 w-[60%] p-16 rounded-md'>
+
+      <h1 className=" text-5xl font-bold mb-4">
         J R G Birmingham
       </h1>
       <p className="text-lg mb-6">
@@ -25,6 +27,7 @@ const Hero = () => {
       <button className="px-6 py-3 bg-blue-600 rounded-md hover:bg-blue-700">
         Learn More
       </button>
+      </div>
     </div>
 
     </section>
