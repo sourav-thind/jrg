@@ -2,8 +2,8 @@ import {JRGLOGO} from '../Utils';
 import { navLists} from '../Constants'
 const Navbar = () => {
   return (
-    <header className='w-full py-5 sm:px-10 px-5  justify-between items-center  '>
-        <nav className='flex w-full items-between'>
+    <header className=' py-5 sm:px-10 px-5  z-10 absolute top-0 left-0 w-full '>
+        <nav className=' items-between'>
             <img src={JRGLOGO} alt='JRG Birmingham' width={72} height={56} className='bg-white ' />
             <div className='flex flex-1 justify-end max-sm:hidden'>
                 {navLists.map((nav)=>(
