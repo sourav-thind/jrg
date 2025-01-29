@@ -10,7 +10,6 @@
 body {
   color: black;
   width: 100%;
-  overflow-x: hidden;
   height: 100%;
   background: #fff;
   border-color: #3b3b3b;
@@ -19,12 +18,6 @@ body {
 
 canvas {
   touch-action: none;
-}
-
-.screen-max-width {
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-
 }
 
 @layer utilities {
