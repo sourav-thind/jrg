@@ -5,6 +5,10 @@ export default {
     extend: {
       colors: {
         blue: "#2997FF",
+        logoC1: "#ffefc6",
+        logoC2: "#c7a358",
+        logoC3: "#009492",
+        logoC4: "#004946",
         gray: {
           DEFAULT: "#86868b",
           100: "#94928d",
