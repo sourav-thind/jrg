@@ -12,7 +12,6 @@ function App() {
       <Hero/>
       <About/>
       <Gallary/>
-      {/* <Highlight/>  */}
 
     </main>
   )
