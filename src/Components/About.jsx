@@ -3,13 +3,10 @@ import { Estimate } from '../Utils'
 
 const About = () => {
     return (
-        <section className="relative h-screen w-screen bg-transparent">
-    <div 
-        className="fixed top-0 left-0 w-full h-screen bg-cover bg-center -z-10"
-        style={{ backgroundImage: `url(${Estimate})` }}
-    ></div>
-
-    <div className="py-8 px-8 text-center bg-Color2 relative">
+        <section className="relative h-screen w-screen bg-cover bg-center"
+        style={{ backgroundImage: `url(${Estimate})` }}>
+       
+    <div className="py-8 px-8  text-center bg-Color2 relative">
         <h1 className="text-4xl font-extrabold mb-4 text-Color3">About Us</h1>
         <p className="text-lg max-w-3xl mx-auto text-Color3 font-semibold">
             With decades of professional experience, we bring your dreams to life through unparalleled craftsmanship and attention to detail. With over 20 years in the industry, we’ve perfected the art of construction and customer satisfaction.
