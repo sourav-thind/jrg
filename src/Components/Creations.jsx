@@ -1,18 +1,11 @@
 import React, {useState} from 'react'
-import { Cupboard } from '../Utils';
-const categories = {
-    Bedrooms: [
-      "/images/bedroom1.jpg",
-      "/images/bedroom2.jpg",
-      "/images/bedroom3.jpg",
-    ],
-    Cupboards : Cupboard,
+import { Bedrooms, Cupboard, Kitchens, MediaBars } from '../Utils';
 
-    Kitchens: [
-      "/images/kitchen1.jpg",
-      "/images/kitchen2.jpg",
-      "/images/kitchen3.jpg",
-    ],
+const categories = {
+    Bedrooms: Bedrooms,
+    Cupboards : Cupboard,
+    Kitchens: Kitchens,
+    MediaBars: MediaBars
   };
 const Creations = () => {
 

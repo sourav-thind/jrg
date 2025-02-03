@@ -4,7 +4,7 @@ import { Estimate } from '../Utils'
 const About = () => {
     return (
         <section className="relative h-screen w-screen bg-transparent">
-    <div
+    <div 
         className="fixed top-0 left-0 w-full h-screen bg-cover bg-center -z-10"
         style={{ backgroundImage: `url(${Estimate})` }}
     ></div>
