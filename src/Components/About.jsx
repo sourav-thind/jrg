@@ -4,8 +4,12 @@ import { Estimate } from '../Utils'
 const About = () => {
     return (
         <section className="relative h-screen w-screen bg-cover bg-center"
-        style={{ backgroundImage: `url(${Estimate})` }}>
-       
+        >
+        <div 
+            className="fixed top-8 left-0 w-full h-screen bg-cover bg-center -z-10"
+            style={{ backgroundImage: `url(${Estimate})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+        ></div>
+
     <div className="py-8 px-8  text-center bg-Color2 relative">
         <h1 className="text-4xl font-extrabold mb-4 text-Color3">About Us</h1>
         <p className="text-lg max-w-3xl mx-auto text-Color3 font-semibold">
