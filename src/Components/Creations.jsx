@@ -1,6 +1,11 @@
 import React, { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
 import { Bedrooms, Cupboard, Kitchens, MediaBars } from "../Utils";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const categories = {
   Bedrooms: Bedrooms,
@@ -11,87 +16,51 @@ const categories = {
 
 const Creations = () => {
   const [selectedCategory, setSelectedCategory] = useState("Cupboards");
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const images = categories[selectedCategory];
-
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
-  };
 
   return (
-    <section className="h-screen w-screen bg-Color2 flex flex-col items-center px-6 mt-6">
-      <h1 className="text-5xl font-extrabold text-gray-800">Creations</h1>
-      <p className="text-md text-gray-600 mt-2">- Designed by us and built by us -</p>
+    <section className="h-screen w-screen bg-Color2 flex flex-col items-center justify-center px-6">
+      <h1 className="text-6xl font-extrabold text-gray-800">Creations</h1>
+      <p className="text-xl text-gray-600 mt-2">- Designed by us and built by us -</p>
 
-      <div className="flex justify-center mt-1 space-x-4 bg-Color1 w-screen py-2">
+      <div className="flex justify-center mt-8 space-x-4">
         {Object.keys(categories).map((category) => (
           <button
             key={category}
             className={`px-6 py-2 text-lg font-semibold rounded-lg transition-colors ${
               selectedCategory === category
                 ? "bg-gray-800 text-white"
-                : "bg-Color2 text-gray-800 hover:bg-gray-400"
+                : "bg-gray-300 text-gray-800 hover:bg-gray-400"
             }`}
-            onClick={() => {
-              setSelectedCategory(category);
-              setCurrentIndex(0);
-            }}
+            onClick={() => setSelectedCategory(category)}
           >
             {category}
           </button>
         ))}
       </div>
-
-      <div className="relative w-full  mt-8 ">
-        <div
-          className="flex "
-          style={{
-            transform: `translateX(-${currentIndex * 100}%)`
-          }}
-        >
-          {images.map((image, index) => (
-           
+      <Swiper
+        modules={[Navigation, Pagination]}
+        navigation
+        pagination={{ clickable: true }}
+        spaceBetween={20}
+        slidesPerView={1}
+        loop={true} 
+        breakpoints={{
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 2 },
+        }}
+        className="w-full  mt-2"
+      >
+        {categories[selectedCategory].map((image, index) => (
+          <SwiperSlide key={index} className="flex justify-center">
             <img
-              key={index}
               src={image}
               alt={`Slide ${index}`}
-              className=" max-h-[70vh] w-[80vw] flex-shrink-0 mx-[10vh] rounded-lg"
+              className="w-[60vw] h-[70vh] object-cover rounded-lg shadow-lg"
             />
-            
-          ))}
-        </div>
-
-        <button
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
-          onClick={prevSlide}
-        >
-          <ChevronLeft size={24} />
-        </button>
-
-        {/* Right Button */}
-        <button
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
-          onClick={nextSlide}
-        >
-          <ChevronRight size={24} />
-        </button>
-      </div>
-
-      {/* Tracking Dots */}
-      <div className="flex justify-center mt-4">
-        {images.map((_, index) => (
-          <span
-            key={index}
-            className={`w-3 h-3 mx-1 rounded-full ${
-              index === currentIndex ? "bg-blue-600" : "bg-gray-300"
-            }`}
-          ></span>
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </section>
   );
 };
