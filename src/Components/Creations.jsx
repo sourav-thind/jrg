@@ -48,19 +48,20 @@ const Creations = () => {
 
       <div className="relative w-full  mt-8 ">
         <div
-          className="flex transition-transform duration-300"
+          className="flex "
           style={{
-            transform: `translateX(-${currentIndex * 100}%)`,
-            width: `${images.length * 100}%`,
+            transform: `translateX(-${currentIndex * 100}%)`
           }}
         >
           {images.map((image, index) => (
+           
             <img
               key={index}
               src={image}
               alt={`Slide ${index}`}
-              className=" max-h-[70vh]  flex-shrink-0 rounded-lg"
+              className=" max-h-[70vh] w-[80vw] flex-shrink-0 mx-[10vh] rounded-lg"
             />
+            
           ))}
         </div>
 

@@ -7,7 +7,7 @@ import Navbar from './Components/Navbar'
 function App() {
 
   return (
-    <main className='overflow-x-hidden'>
+    <main className='overflow-x-hidden md:overflow-x-visible w-screen'>
       <Navbar/>
       <Hero/>
       <About/>

@@ -6,7 +6,7 @@ const About = () => {
         <section className="relative h-screen w-screen bg-cover bg-center"
         >
         <div 
-            className="fixed top-8 left-0 w-full h-screen bg-cover bg-center -z-10"
+            className="fixed top-8 left-0 w-screen h-screen bg-cover bg-center -z-10"
             style={{ backgroundImage: `url(${Estimate})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         ></div>
 
