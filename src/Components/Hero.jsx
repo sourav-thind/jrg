@@ -15,7 +15,7 @@ const Hero = () => {
       </video>
     </div>
   
-    <div className="h-screen hero-title w-full flex-center flex-col relative z-10 text-white text-center">
+    <div className="h-screen hero-title w-full flex-center flex-col relative z-1 text-white text-center">
       <div className='bg-black bg-opacity-70 w-[80%] md:w-[60%] p-16 rounded-md'>
 
       <h1 className=" text-3xl md:text-5xl font-bold mb-4">

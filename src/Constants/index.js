@@ -1,5 +1,5 @@
 
-  export const navLists = ["About US", "Services", "Contact US"];
+  export const navLists = ["About US", "Projects", "Contact US"];
   
   
   export const footerLinks = [
