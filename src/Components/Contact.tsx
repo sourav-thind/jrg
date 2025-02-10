@@ -32,7 +32,7 @@ const Contact = (props: Props) => {
     }, 5000);
     emailjs.send(
       'service_yf6j49o',
-      'template_m9ixk8j',
+      'template_n64v31o',
       {
         from_name: formData.firstName + " " + formData.lastName,
         to_name: 'JRG Kitchen and Bedroom',
@@ -42,7 +42,7 @@ const Contact = (props: Props) => {
         message: formData.message
 
       },
-      'wjSL_o0Va0gsAS_b9'
+      'wjSL_o0Va0gsAS_b9' 
     ).then(() => {
       setFormData({
         firstName: '',
