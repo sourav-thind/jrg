@@ -9,11 +9,18 @@ function App() {
 
   return (
     <main className='overflow-x-hidden md:overflow-x-visible w-screen'>
-      <Navbar/>
-      <Hero/>
-      <About/>
-     <Creations/>
-     <Contact/>
+      <Navbar />
+      <Hero id="hero" />
+      <section id="About">
+        <About />
+      </section>
+      <section id="Creations" >
+        <Creations />
+      </section>
+      <section id="Contact">
+
+        <Contact />
+      </section>
 
     </main>
   )
