@@ -31,13 +31,13 @@ const Contact = (props: Props) => {
       setShowToast(false);
     }, 5000);
     emailjs.send(
-      'service_v97y3bs',
+      'service_yf6j49o',
       'template_m9ixk8j',
       {
         from_name: formData.firstName + " " + formData.lastName,
         to_name: 'JRG Kitchen and Bedroom',
         from_email: formData.email,
-        to_email: 'souravthind07itgmail.com',
+        to_email: 'jrgkitchenandbedroom.com',
         the_subject: formData.subject,
         message: formData.message
 
