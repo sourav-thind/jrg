@@ -4,27 +4,27 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Bedrooms, Cupboard, Kitchens, MediaBars } from "../Utils";
+import { Bedroom, Cupboard, Kitchen, MediaBar } from "../Utils";
 const categories = {
-  Bedrooms: Bedrooms,
-  Cupboards: Cupboard,
-  Kitchens: Kitchens,
-  MediaBars: MediaBars,
+  Bedroom: Bedroom,
+  Cupboard: Cupboard,
+  Kitchen: Kitchen,
+  MediaBar: MediaBar,
 };
 
 const Creations = () => {
-  const [selectedCategory, setSelectedCategory] = useState("Bedrooms");
+  const [selectedCategory, setSelectedCategory] = useState("Bedroom");
 
   return (
     <section className="h-screen w-screen bg-Color2 flex flex-col items-center justify-center px-6">
       <h1 className="text-6xl font-extrabold text-gray-800">Creations</h1>
       <p className="text-xl text-gray-600 mt-2">- Designed by us and built by us -</p>
 
-      <div className="flex justify-center mt-8 space-x-1 md:space-x-4">
+      <div className="flex  justify-center mt-8 space-y-2 space-x-1 md:space-x-4 max-w-screen">
         {Object.keys(categories).map((category) => (
           <button
             key={category}
-            className={`p-2 text-md font-mono md:px-6 md:py-2 md:text-lg md:font-semibold rounded-lg transition-colors ${
+            className={`p-1 text-md font-mono md:px-6 md:py-2 md:text-lg md:font-semibold rounded-lg transition-colors ${
               selectedCategory === category
                 ? "bg-gray-800 text-white"
                 : "bg-gray-300 text-gray-800 hover:bg-gray-400"
