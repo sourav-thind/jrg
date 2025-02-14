@@ -27,9 +27,9 @@ export const heroVideo = hmv;
 export const smallHeroVideo = smallmv;
 export const JRGLOGO = JRG;
 export const Estimate = estimate;
-export const Cupboard = [cupboard1,cupboard2, cupboard3,cupboard4, cupboard5, cupboard6];
-export const Bedroom =[bedroom1, bedroom2];
-export const Kitchen = [kitchen1, kitchen2, kitchen3];
+export const Cupboard = [];
+export const Bedroom =[bedroom1, bedroom2,cupboard1,cupboard2, cupboard3,cupboard4, cupboard5, cupboard6];
+export const Kitchen = [kitchen1, kitchen2];
 export const MediaBar = [mediaBar1, mediaBar2, mediaBar3, mediaBar4];
 
 

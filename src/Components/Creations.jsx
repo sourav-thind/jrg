@@ -7,7 +7,6 @@ import "swiper/css/pagination";
 import { Bedroom, Cupboard, Kitchen, MediaBar } from "../Utils";
 const categories = {
   Bedroom: Bedroom,
-  Cupboard: Cupboard,
   Kitchen: Kitchen,
   MediaBar: MediaBar,
 };
@@ -24,7 +23,7 @@ const Creations = () => {
         {Object.keys(categories).map((category) => (
           <button
             key={category}
-            className={`p-1 text-md font-mono md:px-6 md:py-2 md:text-lg md:font-semibold rounded-lg transition-colors ${
+            className={`p-1 text-md font-mono md:px-6 md:p-2 md:text-lg md:font-semibold rounded-lg  ${
               selectedCategory === category
                 ? "bg-gray-800 text-white"
                 : "bg-gray-300 text-gray-800 hover:bg-gray-400"
