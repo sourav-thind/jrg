@@ -15,18 +15,18 @@ const Hero = () => {
         </video>
       </div>
 
-      <div className="h-[90vh] hero-title w-full flex-center flex-col relative z-1 text-white text-center">
+      <div className="h-[90vh] hero-title w-full flex-center flex-col relative z-10 text-white text-center">
         <div className='bg-black bg-opacity-70 w-[80%] md:w-[60%] p-16 rounded-md'>
 
           <h1 className=" text-3xl md:text-5xl font-bold mb-4">
             J R G Birmingham
           </h1>
           <p className="text-sm md:text-lg mb-6">
-            We Build your house, So you can make it a home.
+            Out of the world quality, in your budget. 
           </p>
-          <button className=" text-sm px-3 py-3 md:px-6 md:py-3 bg-blue rounded-md hover:bg-blue-700">
-            Learn More
-          </button>
+          <a href='#Creations'  className=" text-sm px-3 py-3 md:px-6 md:py-3 bg-blue rounded-md hover:bg-blue-700">
+           Have a look 
+          </a>
         </div>
       </div>
 

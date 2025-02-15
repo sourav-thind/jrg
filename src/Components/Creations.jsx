@@ -16,10 +16,10 @@ const Creations = () => {
 
   return (
     <section className="h-screen w-screen bg-Color2 flex flex-col items-center justify-center px-6">
-      <h1 className="text-6xl font-extrabold text-gray-800">Creations</h1>
-      <p className="text-xl text-gray-600 mt-2">- Designed by us and built by us -</p>
+      <h1 className="text-6xl font-extrabold text-gray-800 md:mt-4">Creations</h1>
+      <p className="text-xl text-gray-600 mt-2 md:mt-1">- Designed by us and built by us -</p>
 
-      <div className="flex  justify-center mt-8 space-y-2 space-x-1 md:space-x-4 max-w-screen">
+      <div className="flex  justify-center mt-8 md:mt-2 space-y-2 space-x-1 md:space-x-4 max-w-screen">
         {Object.keys(categories).map((category) => (
           <button
             key={category}
@@ -44,7 +44,7 @@ const Creations = () => {
         breakpoints={{
           640: { slidesPerView: 1 },
           768: { slidesPerView: 2 },
-          1024: { slidesPerView: 2 },
+          1024: { slidesPerView: 1 },
         }}
         className="w-full  mt-2"
       >
@@ -53,7 +53,7 @@ const Creations = () => {
             <img
               src={image}
               alt={`Slide ${index}`}
-              className="w-[90vw] md:w-[60vw] mt-16 md:mt-12 h-[50vh] m:h-[70vh] object-cover rounded-lg shadow-lg"
+              className="w-[90vw] md:w-[60vw] mx-auto mt-16 md:mt-4 h-[50vh] md:h-[60vh] object-cover rounded-lg shadow-lg"
             />
           </SwiperSlide>
         ))}
