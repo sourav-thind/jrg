@@ -12,7 +12,7 @@ const categories = {
 };
 
 const Creations = () => {
-  const [selectedCategory, setSelectedCategory] = useState("Bedroom");
+  const [selectedCategory, setSelectedCategory] = useState("Kitchen");
 
   return (
     <section className="h-screen w-screen bg-Color2 flex flex-col items-center justify-center px-6">
