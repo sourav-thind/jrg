@@ -9,8 +9,8 @@ const Hero = () => {
   }, [])
   return (
     <section>
-      <div className="absolute left-0 w-[100vw] h-[90vh] z-1 ">
-        <video autoPlay loop muted className="w-full h-full object-cover">
+      <div className="absolute left-0 w-[100vw] h-[100vh] z-1 bg-Color2 ">
+        <video autoPlay loop muted className="w-full h-[90vh] object-cover">
           <source src={heroVideo} />
         </video>
       </div>
@@ -29,6 +29,7 @@ const Hero = () => {
           </a>
         </div>
       </div>
+      <div className='h-[10vh] bg-Color2 bottom-0 fixed'></div>
 
     </section>
   )
