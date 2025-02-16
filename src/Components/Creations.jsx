@@ -19,19 +19,20 @@ const Creations = () => {
       <h1 className="text-6xl font-extrabold text-gray-800 md:mt-4">Creations</h1>
       <p className="text-xl text-gray-600 mt-2 md:mt-1">- Designed by us and built by us -</p>
 
-      <div className="flex  justify-center mt-8 md:mt-2 space-y-2 space-x-1 md:space-x-4 max-w-screen">
+      <div className="flex  flex-initial gap-2 justify-center mt-8 md:mt-2 px-0 py-0 space-x-2 md:space-x-4 max-w-screen overflow-hidden">
         {Object.keys(categories).map((category) => (
           <button
-            key={category}
-            className={`p-1 text-md font-mono md:px-6 md:p-2 md:text-lg md:font-semibold rounded-lg  ${
-              selectedCategory === category
-                ? "bg-gray-800 text-white"
-                : "bg-gray-300 text-gray-800 hover:bg-gray-400"
-            }`}
-            onClick={() => setSelectedCategory(category)}
-          >
-            {category}
-          </button>
+          key={category}
+          className={`p-2 md:px-6 md:py-2 mx-auto my-auto text-md md:text-lg font-semibold rounded-lg ${
+            selectedCategory === category
+              ? "bg-gray-800 text-white"
+              : "bg-gray-300 text-gray-800 hover:bg-gray-400"
+          }`}
+          onClick={() => setSelectedCategory(category)}
+        >
+          {category}
+        </button>
+        
         ))}
       </div>
       <Swiper
