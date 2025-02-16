@@ -2,6 +2,7 @@ import './App.css'
 import About from './Components/About'
 import Contact from './Components/Contact'
 import Creations from './Components/Creations'
+import Footer from './Components/footer'
 import Hero from './Components/Hero'
 import Navbar from './Components/Navbar'
 
@@ -21,7 +22,7 @@ function App() {
 
         <Contact />
       </section>
-
+      <Footer/>
     </main>
   )
 }
