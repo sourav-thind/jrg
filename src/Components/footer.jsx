@@ -11,12 +11,8 @@ const Footer = () => {
 
                     {/* Social Links */}
                     <div className="flex justify-center space-x-4 mt-4">
-                        <a href="https://instagram.com/yourpage" target="_blank" rel="noopener noreferrer">
-                            <img src="/instagram-icon.svg" alt="Instagram" className="w-6 h-6" />
-                        </a>
-                        <a href="https://tiktok.com/@yourpage" target="_blank" rel="noopener noreferrer">
-                            <img src="/tiktok-icon.svg" alt="TikTok" className="w-6 h-6" />
-                        </a>
+                    <a href=""><FaInstagram className="h-6 w-6" /></a>
+                    <a href=""> <FaTiktok className="h-6 w-6" /></a>
 
                     </div>
                 </div>
