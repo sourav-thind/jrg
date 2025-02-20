@@ -12,7 +12,7 @@ const Footer = () => {
                     {/* Social Links */}
                     <div className="flex justify-center space-x-4 mt-4">
                     <a href=""><FaInstagram className="h-6 w-6" /></a>
-                    <a href=""> <FaTiktok className="h-6 w-6" /></a>
+                    <a href="https://www.tiktok.com/@jrgkitchenbedroom"> <FaTiktok className="h-6 w-6" /></a>
 
                     </div>
                 </div>
