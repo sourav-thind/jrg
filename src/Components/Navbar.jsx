@@ -22,6 +22,14 @@ const Navbar = () => {
 
         {/* Full navigation for md and larger screens */}
         <div className="hidden md:flex space-x-5">
+          <div className="flex justify-center space-x-4 mt-4">
+            <a href="">
+              <FaInstagram className="h-6 w-6" />
+            </a>
+            <a href="https://www.tiktok.com/@jrgkitchenbedroom">
+              <FaTiktok className="h-6 w-6" />
+            </a>
+          </div>
           {navLists.map((nav) => (
             <div
               key={nav}
