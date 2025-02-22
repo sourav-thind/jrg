@@ -24,7 +24,7 @@ const Navbar = () => {
         {/* Full navigation for md and larger screens */}
         <div className="hidden md:flex space-x-5">
           <div className="flex justify-center space-x-8 mx-6 ">
-            <a href="">
+            <a href="https://www.instagram.com/jrg_kitchen_bedroom_birmingham/">
               <FaInstagram className="h-6 w-6" />
             </a>
             <a href="https://www.tiktok.com/@jrgkitchenbedroom">
@@ -82,7 +82,7 @@ const Navbar = () => {
             </a>
           ))}
           <div className="flex justify-center space-x-8 mx-6 ">
-            <a href="">
+            <a href="https://www.instagram.com/jrg_kitchen_bedroom_birmingham/">
               <FaInstagram className="h-6 w-6" />
             </a>
             <a href="https://www.tiktok.com/@jrgkitchenbedroom">
