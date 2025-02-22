@@ -30,7 +30,7 @@ const About = () => {
                     </p>
                 </div>
 
-                <div className="bg-white relative shadow-lg  text-sm md:text-base  p-1 md:p-6  rounded-lg text-center text-Color1">
+                <div className="bg-Color1 relative shadow-lg  text-sm md:text-base  p-1 md:p-6  rounded-lg text-center text-white">
                     <h3 className="text-xl font-semibold mb-2 md:mb-4">Professionalism</h3>
                     <p>
                         Our team is dedicated to providing a seamless, stress-free experience from consultation to the completion of projects.

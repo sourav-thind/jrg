@@ -26,7 +26,7 @@ const Navbar = () => {
           <div className="flex justify-center space-x-8 mx-6 ">
             <a href="">
               <FaInstagram className="h-6 w-6" />
-            </a> 
+            </a>
             <a href="https://www.tiktok.com/@jrgkitchenbedroom">
               <FaTiktok className="h-6 w-6" />
             </a>
@@ -50,6 +50,7 @@ const Navbar = () => {
               </a>
             </div>
           ))}
+
         </div>
 
         {/* Hamburger icon for small screens */}
@@ -80,6 +81,14 @@ const Navbar = () => {
               {nav}
             </a>
           ))}
+          <div className="flex justify-center space-x-8 mx-6 ">
+            <a href="">
+              <FaInstagram className="h-6 w-6" />
+            </a>
+            <a href="https://www.tiktok.com/@jrgkitchenbedroom">
+              <FaTiktok className="h-6 w-6" />
+            </a>
+          </div>
         </div>
       )}
     </header>
