@@ -10,10 +10,10 @@ const Footer = () => {
                     <p className="text-sm mt-1">Expert Bedroom, Bathroom & Kitchen Fittings</p>
 
                     <div className="flex justify-center space-x-4 mt-4">
-                    <a href="https://www.instagram.com/jrg_kitchen_bedroom_birmingham/">
+                    <a target="_blank" href="https://www.instagram.com/jrg_kitchen_bedroom_birmingham/">
                         <FaInstagram className="h-6 w-6" />
                     </a>
-                    <a href="https://www.tiktok.com/@jrgkitchenbedroom">
+                    <a target="_blank" href="https://www.tiktok.com/@jrgkitchenbedroom">
                      <FaTiktok className="h-6 w-6" />
                      </a>
                     </div>
@@ -25,8 +25,8 @@ const Footer = () => {
                         <p className="text-lg font-semibold">JRG Birmingham</p>
                         <p className="text-sm mt-1">Expert Bedroom, Bathroom & Kitchen Fittings</p>
                         <div className="mt-6 flex space-x-8 w-full justify-center">
-                            <a href="https://www.instagram.com/jrg_kitchen_bedroom_birmingham/"><FaInstagram className="h-8 w-8" /></a>
-                            <a href="https://www.tiktok.com/@jrgkitchenbedroom"> <FaTiktok className="h-8 w-8" /></a>
+                            <a target="_blank" href="https://www.instagram.com/jrg_kitchen_bedroom_birmingham/"><FaInstagram className="h-8 w-8" /></a>
+                            <a target="_blank" href="https://www.tiktok.com/@jrgkitchenbedroom"> <FaTiktok className="h-8 w-8" /></a>
                         </div>
                     </div>
 

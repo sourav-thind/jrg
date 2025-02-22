@@ -43,11 +43,11 @@ const About = () => {
     <div className="relative h-[20vh]  text-center bg-transparent  ">
         <div className=' py-3 px-4 md:px-4 overflow-visible'>
 
-        <h2 className=" text-2xl md:text-3xl font-extrabold md:font-bold mt-5 md:mt-0 text-white">Start Your Dream Project Today</h2>
-        <p className="text-lg md:text-lg max-w-2xl mx-auto mt-6 mb-6 md:mt-2 text-white">
+        <h2 className=" text-2xl md:text-3xl font-extrabold md:font-bold mt-2 md:mt-0 text-white">Start Your Dream Project Today</h2>
+        <p className="text-lg md:text-lg max-w-2xl mx-auto mt-4 mb-6 md:mt-2 text-white">
             Let us help you build the home you’ve always envisioned. Contact us today and let’s bring your ideas to life.
         </p>
-        <a href='#Contact' className="px-6 py-3 md:px-6 md:py-3  bg-white text-blue-600 font-semibold md:font-bold rounded-lg hover:bg-gray-200 transition">
+        <a href='#Contact'  className="px-6 py-3 md:px-6 md:py-3  bg-white text-blue-600 font-semibold md:font-bold rounded-lg hover:bg-gray-200 transition">
             Contact Us
         </a>
         </div>
